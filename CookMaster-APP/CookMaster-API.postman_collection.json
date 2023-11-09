@@ -1,0 +1,294 @@
+{
+	"info": {
+		"_postman_id": "d6c61a0f-69c9-4a31-b316-72395d8bd578",
+		"name": "CookMaster-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ingrediente",
+			"item": [
+				{
+					"name": "Incluir ingrediente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"descricao\": \"banana\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/ingrediente",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ingrediente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar todos os ingredientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/ingrediente",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ingrediente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar todos os ingredientes por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/ingrediente/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ingrediente",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar ingredientes por descricao",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/ingrediente/filter?descricao=bana",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ingrediente",
+								"filter"
+							],
+							"query": [
+								{
+									"key": "descricao",
+									"value": "bana"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categoria",
+			"item": [
+				{
+					"name": "Incluir categoria",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"descricao\": \"engraçada\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/categoria",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"categoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar todas as categorias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/categoria",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"categoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar categoria por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/categoria/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"categoria",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar categoria por descricao",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/categoria/filter?descricao=ra",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"categoria",
+								"filter"
+							],
+							"query": [
+								{
+									"key": "descricao",
+									"value": "ra"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Classificacao",
+			"item": [
+				{
+					"name": "Incluir classificacao",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"descricao\": \"engraçada\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/classificacao",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"classificacao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar todas as classificacaoes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/classificacao",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"classificacao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar classificacao por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/classificacao/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"classificacao",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

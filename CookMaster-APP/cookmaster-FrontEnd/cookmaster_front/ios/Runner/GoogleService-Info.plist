@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1053572601670-c7vmo279spp8eu7tj7c7rlre0f49nhoi.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1053572601670-c7vmo279spp8eu7tj7c7rlre0f49nhoi</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAnCM5tu8reIfhfZHMyninlsu9tc8C2OwY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1053572601670</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>br.com.cookmaster.cookmasterFront</string>
+	<key>PROJECT_ID</key>
+	<string>cookmaster-124f5</string>
+	<key>STORAGE_BUCKET</key>
+	<string>cookmaster-124f5.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1053572601670:ios:75bb25de21bc631ba27747</string>
+</dict>
+</plist>
