@@ -14,13 +14,17 @@ public class IngredienteService {
 
 	@Autowired
 	private IngredienteRepository ingredienteRepository;
-	
+
+	@Autowired
+	private EmailService emailService;
 	
 	public Ingrediente insert(Ingrediente ingrediente) throws Exception {
-		
+
 		validaInsert(ingrediente);
-		ingredienteRepository.saveAndFlush(ingrediente);
-		return ingrediente;
+		Ingrediente i = ingredienteRepository.saveAndFlush(ingrediente);
+		emailService.sendMail("kedssy533779@gmail.com", "ingrediente Criado", "Ingrediente com id: " + i.getId() +" criado");
+
+		return i;
 		
 	}
 	
